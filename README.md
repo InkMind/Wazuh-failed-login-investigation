@@ -1,4 +1,5 @@
 # SOC Practical Lab 01: Windows Failed Login Investigation
+![SOC Practical Lab 01 Banner](soc-lab-01-banner.png)
 
 **Role:** Aspiring Tier 1 SOC Analyst  
 **Project Type:** Blue Team / Security Monitoring  
