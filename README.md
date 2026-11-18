@@ -2,7 +2,7 @@
 
 **Role:** Aspiring Tier 1 SOC Analyst  
 **Project Type:** Blue Team / Security Monitoring  
-**Status:** Initial Evidence Collection Completed – Wazuh Investigation Pending
+**Status:** Investigation Completed
 
 ## 1. Project Overview
 
@@ -69,7 +69,7 @@ The authentication failure details were examined to identify the reason for the 
 
 ![Authentication Failure Information](03-authentication-failure.png.png)
 
-### Wazuh SIEM Investigation
+### 4.4 Wazuh SIEM Investigation
 
 **1. Wazuh Authentication Failure Evidence**
 
@@ -123,29 +123,46 @@ The investigation successfully demonstrated how Windows failed-login events can 
 
 This was a controlled laboratory simulation, not a confirmed external attack.
 
-## 5. Wazuh Investigation
+## 6. Wazuh Investigation
 
-**Status: Pending**
+**Status: Completed**
 
-The next phase will involve:
+The Windows endpoint successfully transmitted security events to the Wazuh SIEM.
 
-- Verifying Windows agent connectivity.
-- Searching for Event ID 4625 in Wazuh.
-- Investigating relevant Wazuh alerts.
-- Correlating Windows Security events with Wazuh.
-- Analysing authentication failure patterns.
+A controlled failed-login attempt was generated using the temporary account `SOC-Lab-Test`.
 
-## 6. Skills Demonstrated
+Wazuh successfully detected the event and generated the following alert:
+
+- Windows Event ID: 4625
+- Wazuh Rule ID: 60122
+- Alert Level: 5
+- Target Account: SOC-Lab-Test
+- Source Address: ::1
+- Failure Reason: Incorrect password
+- Wazuh Agent: Windows-Laptop
+
+The investigation confirmed that the event originated from a local authentication attempt rather than an external network source.
+
+The activity was a controlled laboratory simulation, not a confirmed malicious attack.
+
+## 7. Skills Demonstrated
 
 - Windows Event Viewer
 - Windows Security Log Analysis
-- Authentication Failure Investigation
-- Event ID Analysis
-- Basic Incident Documentation
-- SIEM Investigation (Wazuh – pending)
+- Event ID 4625 Investigation
+- Authentication Failure Analysis
+- Wazuh SIEM Monitoring
+- Security Alert Investigation
+- Log Analysis and Correlation
+- Incident Documentation
+- Basic Incident Response
+  
+## 8. Project Outcome
 
-## 7. Project Outcome
+Successfully completed a practical Windows failed-login investigation using Windows Event Viewer and Wazuh SIEM.
 
-Initial Windows evidence collection has been completed.
+The investigation demonstrated how Windows authentication failures can be generated, collected, detected, analysed, and documented.
 
-The Wazuh investigation and final incident assessment will be documented as the project progresses.
+Supporting evidence and the formal SOC incident report are included in this repository.
+
+**Investigation Result: Successful**
