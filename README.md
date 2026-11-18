@@ -159,6 +159,10 @@ The activity was a controlled laboratory simulation, not a confirmed malicious a
   
 ## 8. Project Outcome
 
+## Supporting Documentation
+
+[View SOC Incident Report 001](SOC-Incident-Report-001.md)
+
 Successfully completed a practical Windows failed-login investigation using Windows Event Viewer and Wazuh SIEM.
 
 The investigation demonstrated how Windows authentication failures can be generated, collected, detected, analysed, and documented.
