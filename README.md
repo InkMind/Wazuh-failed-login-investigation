@@ -55,19 +55,19 @@ The following screenshots document the initial Windows failed login investigatio
 
 The Windows Security log was filtered to identify six failed authentication events.
 
-![Windows Security Log](screenshots/01-security-log-4625.png)
+![Windows Security Log](01-security-log-4625.png)
 
 ### 4.2 Failed Login Event Details
 
 An individual Event ID 4625 was examined to identify the account involved and the type of authentication attempt.
 
-![Failed Login Details](screenshots/02-failed-login-details.png)
+![Failed Login Details](02-failed-login-details.png.png)
 
 ### 4.3 Authentication Failure Information
 
 The authentication failure details were examined to identify the reason for the unsuccessful login.
 
-![Authentication Failure Information](screenshots/03-authentication-failure.png)
+![Authentication Failure Information](03-authentication-failure.png.png)
 
 ## 5. Wazuh Investigation
 
