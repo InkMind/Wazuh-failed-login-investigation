@@ -49,8 +49,25 @@ The available evidence does not establish malicious intent or an external attack
 
 ## 4. Investigation Screenshots
 
-Screenshots documenting the initial Windows evidence collection will be added to the `screen<img width="959" height="505" alt="Screenshot 2026-11-17 181529" src="https://github.com/user-attachments/assets/f147167f-c805-4b2f-8bff-8a385b81bb7f" />
-shots` directory.
+The following screenshots document the initial Windows failed login investigation.
+
+### 4.1 Windows Security Log – Event ID 4625
+
+The Windows Security log was filtered to identify six failed authentication events.
+
+![Windows Security Log](screenshots/01-security-log-4625.png)
+
+### 4.2 Failed Login Event Details
+
+An individual Event ID 4625 was examined to identify the account involved and the type of authentication attempt.
+
+![Failed Login Details](screenshots/02-failed-login-details.png)
+
+### 4.3 Authentication Failure Information
+
+The authentication failure details were examined to identify the reason for the unsuccessful login.
+
+![Authentication Failure Information](screenshots/03-authentication-failure.png)
 
 ## 5. Wazuh Investigation
 
