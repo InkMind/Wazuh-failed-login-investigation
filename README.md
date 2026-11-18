@@ -83,6 +83,46 @@ The authentication failure details were examined to identify the reason for the 
 
 ![Wazuh Alert Details](05-wazuh-4625-details.png.png)
 
+## 5. Investigation Findings
+
+### Detection Summary
+
+A controlled failed-login attempt was generated on the Windows machine using the temporary account `SOC-Lab-Test`.
+
+The failed authentication event was successfully collected and detected by Wazuh.
+
+### Alert Details
+
+| Field | Value |
+|---|---|
+| Windows Event ID | 4625 |
+| Wazuh Rule ID | 60122 |
+| Wazuh Alert Level | 5 |
+| Alert Description | Logon Failure - Unknown user or bad password |
+| Target Account | SOC-Lab-Test |
+| Source Account | hp |
+| Logon Type | 2 (Interactive) |
+| Source Address | ::1 (IPv6 loopback) |
+| Failure Status | 0xc000006d |
+| Failure Substatus | 0xc000006a |
+| Authentication Package | Negotiate |
+| Process | svchost.exe |
+| Wazuh Agent | Windows-Laptop |
+
+### Analysis
+
+- Event ID 4625 indicates a failed Windows logon attempt.
+- Status 0xc000006d indicates a logon failure.
+- Substatus 0xc000006a indicates an incorrect password.
+- The source address ::1 represents the local IPv6 loopback address.
+- Wazuh successfully generated alert 60122 at severity level 5.
+
+### Investigation Conclusion
+
+The investigation successfully demonstrated how Windows failed-login events can be collected, monitored, and detected using Wazuh.
+
+This was a controlled laboratory simulation, not a confirmed external attack.
+
 ## 5. Wazuh Investigation
 
 **Status: Pending**
