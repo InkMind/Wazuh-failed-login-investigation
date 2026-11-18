@@ -69,6 +69,20 @@ The authentication failure details were examined to identify the reason for the 
 
 ![Authentication Failure Information](03-authentication-failure.png.png)
 
+### Wazuh SIEM Investigation
+
+**1. Wazuh Authentication Failure Evidence**
+
+![Wazuh Authentication Failure](03-wazuh-4625-authentication-failure.png.png.png)
+
+**2. Wazuh Alert Overview**
+
+![Wazuh Alert Overview](04-wazuh-4625-alert.png.png)
+
+**3. Wazuh Alert Details**
+
+![Wazuh Alert Details](05-wazuh-4625-details.png.png)
+
 ## 5. Wazuh Investigation
 
 **Status: Pending**
